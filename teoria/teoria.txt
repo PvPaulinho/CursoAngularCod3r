@@ -1,0 +1,65 @@
+----------- Style -----------
+
+Os estilos (Style) podem ser aplicados globalmente em (styles.css) ou expecificadamente para cada componente em seus respectivos componentes
+
+----------- Decorator -----------
+Padrão de projeto, para evitar herança trabalhando com composição para extender um determinado objeto
+(São os @...)
+
+----------- Componentes (Components) -----------
+
+    - Componente é o principal bloco de construção para aplicativos.
+
+    - É formado por 3 partes:
+        - html      -> Obs.: Não é necessário ter o arquivo HTML podendo ter o template dentro do arquivo ts
+        - css      -> Obs.: Não é obrigatorio ter CSS no componente
+        - ts 
+
+
+----------- Diretivas (Directives) -----------
+
+    - Diretivas são as funções a serem criadas e executadas sempre que chamadas, aprimorando a capacidade dos elementos do HTML anexando comportamentos personalizados ao DOM.
+        --> Obs.: Podendo assim implementa-las apenas chamando o nome delas na tag (Como um seletor).
+
+    - Existem 2 tipos de Diretivas: 
+        -> Diretiva de atributo
+            Ela foca em 2 coisas alterar a "APARENCIA" e o "COMPORTAMENTO" de um elemento, componente ou outra diretiva.
+                - Apareência: Implementação de stylo (CSS)
+                - Comportamento: Uma determinada ação dentro da sua diretiva (Vinculando-a. Por exemplo com o  backend)
+        -> Diretiva estrutural
+            Altera a estrutura, no layout, adicionando ou removendo elementos da DOM (Alteração no HTML)
+            Para utilização e iniciado com *ng antes do nome
+
+----------- Property Binding -----------
+
+    - Para fazer associação de propriedades ou atributos do HTML com o TS
+        ex.: [dataSource]="NomeDoComponente"   
+                -> É feito dentro da Tag (<div>[dataSource]="NomeDoComponente"</div>)
+
+----------- Property Binding -----------
+
+    - Para fazer associação de eventos do HTML com o TS
+        ex.: (click)="NomeDoEvento()"   -> É feito dentro da Tag
+
+----------- One Way Dat Binding -----------
+
+    - A alteração é feita do componente no TS para o HTML (Visual)
+        Obs.: É feito com binding de Property
+
+----------- Two Way Dat Binding -----------
+
+    - A alteração pode ser das duas direções. tando do HTML para o TS, quanto do TS para o HTML.
+        ex.: [(ngModel)]="NomeDoComponente"   -> É feito dentro da Tag
+        Obs.: É feito com binding de Property
+
+----------- Router -----------
+
+    - É a forma de navegar entre as páginas do app. Pois carrega componentes difenrentes não páginas diferentes.
+    Ex.: <a>routerLink="/home"</a>
+
+----------- Pipes -----------
+
+    - Processamentos feitos em cima de variáveis. Focado fazer a alteração do formato da variável
+        ex.: {{produto.vencimento | date}} -> Vai ler o formato de vencimento e transforma-lo para o formato date
+        Obs.: Pode receber parametros, como: {{ produto.preco | currency: 'BRL' }}
+        Obs.: Pode se fazer a chaining (Ou encadeiamento) de Pipes também. Utilizando mais de 1
