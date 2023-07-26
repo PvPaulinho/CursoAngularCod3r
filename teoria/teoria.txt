@@ -2,9 +2,11 @@
 
 Os estilos (Style) podem ser aplicados globalmente em (styles.css) ou expecificadamente para cada componente em seus respectivos componentes
 
+
 ----------- Decorator -----------
 Padrão de projeto, para evitar herança trabalhando com composição para extender um determinado objeto
 (São os @...)
+
 
 ----------- Componentes (Components) -----------
 
@@ -30,21 +32,25 @@ Padrão de projeto, para evitar herança trabalhando com composição para exten
             Altera a estrutura, no layout, adicionando ou removendo elementos da DOM (Alteração no HTML)
             Para utilização e iniciado com *ng antes do nome
 
+
 ----------- Property Binding -----------
 
     - Para fazer associação de propriedades ou atributos do HTML com o TS
         ex.: [dataSource]="NomeDoComponente"   
                 -> É feito dentro da Tag (<div>[dataSource]="NomeDoComponente"</div>)
 
+
 ----------- Property Binding -----------
 
     - Para fazer associação de eventos do HTML com o TS
         ex.: (click)="NomeDoEvento()"   -> É feito dentro da Tag
 
+
 ----------- One Way Dat Binding -----------
 
     - A alteração é feita do componente no TS para o HTML (Visual)
         Obs.: É feito com binding de Property
+
 
 ----------- Two Way Dat Binding -----------
 
@@ -52,10 +58,12 @@ Padrão de projeto, para evitar herança trabalhando com composição para exten
         ex.: [(ngModel)]="NomeDoComponente"   -> É feito dentro da Tag
         Obs.: É feito com binding de Property
 
+
 ----------- Router -----------
 
     - É a forma de navegar entre as páginas do app. Pois carrega componentes difenrentes não páginas diferentes.
     Ex.: <a>routerLink="/home"</a>
+
 
 ----------- Pipes -----------
 
@@ -63,3 +71,15 @@ Padrão de projeto, para evitar herança trabalhando com composição para exten
         ex.: {{produto.vencimento | date}} -> Vai ler o formato de vencimento e transforma-lo para o formato date
         Obs.: Pode receber parametros, como: {{ produto.preco | currency: 'BRL' }}
         Obs.: Pode se fazer a chaining (Ou encadeiamento) de Pipes também. Utilizando mais de 1
+
+----------- Programação Reativa -----------
+
+    - O código é reativo ou seja, so será executado após ser chamado.
+     
+
+----------- Service -----------
+
+    - São classes que têm como principal objetivo organizar e compartilhar métodos e dados entre componentes.
+    - Pode ser criado com o intuido de dividir responsabilidades.
+    - Ideia é focar serviços que fazem sentido em cada Service.
+ 
