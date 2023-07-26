@@ -81,5 +81,5 @@ Padrão de projeto, para evitar herança trabalhando com composição para exten
 
     - São classes que têm como principal objetivo organizar e compartilhar métodos e dados entre componentes.
     - Pode ser criado com o intuido de dividir responsabilidades.
-    - Ideia é focar serviços que fazem sentido em cada Service.
+    - Ideia é focar serviços que fazem sentido em cada Service. 
  
