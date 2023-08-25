@@ -33,14 +33,14 @@ Padrão de projeto, para evitar herança trabalhando com composição para exten
             Para utilização e iniciado com *ng antes do nome
 
 
------------ Property Binding -----------
+----------- Property Binding (Atributos) -----------
 
     - Para fazer associação de propriedades ou atributos do HTML com o TS
         ex.: [dataSource]="NomeDoComponente"   
                 -> É feito dentro da Tag (<div>[dataSource]="NomeDoComponente"</div>)
 
 
------------ Property Binding -----------
+----------- Property Binding (Eventos) -----------
 
     - Para fazer associação de eventos do HTML com o TS
         ex.: (click)="NomeDoEvento()"   -> É feito dentro da Tag
