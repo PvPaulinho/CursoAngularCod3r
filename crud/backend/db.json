@@ -1,39 +1,19 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "nome": "Caneta",
-      "preco": 1.99
+      "name": "Caneta",
+      "price": "2.35",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Notebook",
-      "preco": 1879.32
+      "name": "Geladeira",
+      "price": "3199.99",
+      "id": 2
     },
     {
-      "id": 3,
-      "nome": "Celular",
-      "preco": 1215.51
-    },
-    {
-      "nome": "mesa",
-      "preco": "582.89",
-      "id": 4
-    },
-    {
-      "nome": "Geladeira",
-      "preco": "1913.99",
-      "id": 5
-    },
-    {
-      "name": "Produto de teste",
-      "price": 125.98,
-      "id": 6
-    },
-    {
-      "name": "Produto de teste",
-      "price": "0.99",
-      "id": 7
+      "name": "Mesa",
+      "price": "439.58",
+      "id": 3
     }
   ]
 }
